@@ -35,7 +35,18 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
 
-};
+  const unique = (value, index, self) => {
+    return self.indexOf(value) === index
+  }
 
+  return this.journeys.filter((journey) => {
+
+    const listOfTransports = journeys.getJourneysByTransport 
+
+  if listOfTransports(unique) {
+    return journey.transport
+  }
+})
+}
 
 module.exports = Traveller;
